@@ -72,6 +72,7 @@ end
 
   # Test isoof function
   @test iso_of(C) == 12
+
 end
 
 
@@ -79,6 +80,7 @@ end
   #Create test species
   e = Species("electron")
   C = Species("12C")
+  p = Species("proton")
 
   #Test g_spin function
   g_spin(e) ≈ 2
@@ -88,7 +90,7 @@ end
   gyromagnetic_anomaly(e) ≈ 2
   gyromagnetic_anomaly(C) ≈ 2
 
-  g_nucleon(C) ≈ 2
+  g_nucleon(p) ≈ 5.58
 end
 
 @testset "Helper Functions" begin
