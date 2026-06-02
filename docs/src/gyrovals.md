@@ -15,7 +15,7 @@ In `gyrovals.jl`, the spin g-factor (g-spin) and gyromagnetic anomoly values are
     * The paricles with known g-factors are the deuteron, "electron, helion, muon, neutron, proton, and triton.
 
 The values for the g-factor are calculated as: 
-$$g_s = \frac{m_s codot mu_s}{spin_s \cdot charge_s}$$
+$$g_s = \frac{m_s \codot {mu}_s}{{spin_s} \cdot {charge}_s}$$
 
 as per Abell et al. (2024) and is of datatype Float64.
 
