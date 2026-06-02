@@ -3,7 +3,7 @@
 #####################################################################
 # functions that produce the gyromagnetic constants
 #####################################################################
-"""
+@doc """
     g_spin(species::Species)
 
 Compute and return the value of g_s for a particle in [1/(T*s)] == [C/kg]
@@ -300,7 +300,7 @@ function find_superscript(num::Int)
 end
 
 
-"""
+@doc """
     normalize_superscripts(str::String)
 
 Turns a superscript string of digits `str` into a normal string of digits.
@@ -323,7 +323,7 @@ function normalize_superscripts(str::String)
   return String(take!(buf))
 end
 
-"""
+@doc """
     chargeparse(c::String)
 
 Turn a user defined string `c` representing atomic charge state into an integer charge state.
